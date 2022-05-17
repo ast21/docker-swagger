@@ -1,4 +1,4 @@
-# Swagger
+# Swagger Editor
 
 Нужно скопировать(создать) файл `.env`
 ```sh
