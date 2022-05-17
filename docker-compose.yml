@@ -1,0 +1,15 @@
+version: '3'
+services:
+  swagger:
+    image: swaggerapi/swagger-editor
+    networks:
+      - front
+    environment:
+      - VIRTUAL_HOST=${VIRTUAL_HOST}
+      - VIRTUAL_PORT=8080
+    restart: always
+
+networks:
+  front:
+    external:
+      name: front
